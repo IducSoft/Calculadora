@@ -1,0 +1,162 @@
+
+/* Like tomorrow i'm gonna blick your fronna */
+
+.calculator{
+
+    background-color: rgb(55 26 102);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(55 26 102);
+    border-radius: 20px;
+}
+
+.displayCount{
+
+    width: 100%;
+    height: 100px;
+    background-color: #ce93ea;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    padding-right: 1rem;
+}
+
+.numbers-insert{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-weight: bolder;
+    color: white;
+}
+
+.tablero{
+
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #ce93ea;
+    padding: 2rem;
+}
+
+
+.teclas{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 30px;
+}
+
+.tecla{
+
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border-bottom: 5px solid rgb(118 96 126);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.tecla:active{
+
+    filter: invert(80%);
+    border-top: 5px solid rgb(118 96 126);
+    border-bottom: none;
+}
+
+
+.teclas .tecla:nth-child(4){
+
+    background-color: #ff8484;
+}
+
+.teclas .tecla:nth-child(17){
+
+    grid-column: 1/3;
+    background-color: #ff8484;
+}
+
+.teclas .tecla:nth-child(18){
+
+    grid-column: 3/4;
+    /* background-color: #ff00ff; */
+}
+
+.teclas .tecla:nth-child(19){
+
+    grid-column: 4/-1;
+    background-color: #ff00ff;
+}
+
+
+@media screen and (max-width: 576px){
+    
+
+    .calculator-container{
+
+        width: 360px;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    
+
+    .calculator-container{
+
+        width: 560px;
+    }
+}
+
+/* 
+@media screen and (min-width: 1400px){
+    
+
+    .calculator-container{
+
+        width: 900px;
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    
+
+    .calculator-container{
+
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    
+
+    .calculator-container{
+
+        width: 650px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    
+
+    .calculator-container{
+
+        width: 550px;
+    }
+} */
